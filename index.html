@@ -7,6 +7,32 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <main class="container">
+    <header>
+      <h1>Expense Tracker</h1>
+      <p class="subtitle">Log spending in any currency, see it in one.</p>
+    </header>
+ 
+    <div id="status" class="status" role="status" aria-live="polite" hidden></div>
+ 
+    <section class="card" aria-labelledby="add-heading">
+      <h2 id="add-heading">Add expense</h2>
+      <form id="expense-form" class="form-grid">
+        <label>Description
+          <input id="description" type="text" required maxlength="80" placeholder="e.g. Taxi to airport">
+        </label>
+        <label>Amount
+          <input id="amount" type="number" min="0.01" step="0.01" required placeholder="0.00">
+        </label>
+        <label>Currency
+          <select id="currency"></select>
+        </label>
+        <label>Category
+          <select id="category"></select>
+        </label>
+        <button type="submit" class="primary">Add</button>
+      </form>
+    </section>
 
 </body>
 </html>
