@@ -33,6 +33,27 @@
         <button type="submit" class="primary">Add</button>
       </form>
     </section>
+     <section class="card" aria-labelledby="list-heading">
+      <div class="toolbar">
+        <h2 id="list-heading">Expenses</h2>
+        <label>Filter
+          <select id="filter"></select>
+        </label>
+        <label>Home currency
+          <select id="home-currency"></select>
+        </label>
+      </div>
+ 
+      <p id="empty" class="empty">No expenses yet. Add your first one above.</p>
+      <ul id="expense-list" class="expense-list"></ul>
+ 
+      <div class="total-row">
+        <span>Total</span>
+        <strong id="total">0.00</strong>
+      </div>
+      <p id="total-warning" class="warning" role="status"></p>
+    </section>
+  </main>
 
 </body>
 </html>
