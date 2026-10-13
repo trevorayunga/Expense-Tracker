@@ -1,1 +1,34 @@
-Expense Tracker with Live Currency Conversion
+# Expense Tracker with Live Currency Conversion
+
+People who travel, freelance internationally, or shop from foreign stores lose track of spending because every purchase is in a different currency. This single-page app lets you log each expense in the currency you actually paid in and instantly see everything, plus a running total, converted into one home currency using live exchange rates.
+
+
+## Features
+- Add expenses (description, amount, currency, category)
+- Each expense shows its original amount and its converted home-currency value
+- Running total that updates on add, delete, filter, or home-currency change
+- Delete expenses; filter by category; change home currency
+- Loading and error states with a Retry button (the UI never silently breaks)
+- Expenses without an available rate are flagged, not silently dropped
+
+## Tech used
+- REST API: [open.er-api.com](https://www.exchangerate-api.com/docs/free) (free, no key) via `fetch()` + `async/await`
+- Vanilla JavaScript ES modules (`api`, `state`, `utils`, `ui`, `main`)
+- Jest for unit tests
+- ESLint (`eslint:recommended`)
+
+## Run locally
+npm install
+npm start          # serves the site (ES modules need http://, not file://)
+npm test           # run unit tests
+npm run lint       # run ESLint
+```
+
+## Project structure
+```
+index.html, style.css
+src/  api.js  state.js  utils.js  ui.js  main.js
+tests/utils.test.js
+```
+
+- Component-level and end-to-end tests
