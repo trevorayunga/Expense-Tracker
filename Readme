@@ -2,7 +2,7 @@
 
 People who travel, freelance internationally, or shop from foreign stores lose track of spending because every purchase is in a different currency. This single-page app lets you log each expense in the currency you actually paid in and instantly see everything, plus a running total, converted into one home currency using live exchange rates.
 
-
+https://trevorayunga.github.io/Expense-Tracker/
 ## Features
 - Add expenses (description, amount, currency, category)
 - Each expense shows its original amount and its converted home-currency value
